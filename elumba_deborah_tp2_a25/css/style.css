@@ -1,0 +1,366 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+
+
+/* mise à zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* transition smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header,nav,section {
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* header "mon voyage au japon" */
+header {
+  background-image: url("../images/kyoto.jpeg");
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: rgb(255, 240, 238);
+  text-decoration: overline;
+}
+
+/* navigateur */
+nav {
+background-color: rgb(255, 240, 238);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* section */
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+/* id */
+#Accueil {
+  background-color: cornsilk;
+  color: rgb(255, 207, 201);
+  display: flex;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+
+
+#Inscription {
+  background-color: rgb(255, 240, 238);
+  color: black;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+#Tableau {
+  background-color: cornsilk;
+  color: black;
+}
+
+#Articles {
+  background-color: rgb(255, 240, 238);
+  color: black;
+}
+
+#Galerie {
+  background-color: cornsilk;
+  color: black;
+}
+
+/* pied de page */
+
+
+/* tableau css */
+#Tableau {
+  height: auto;
+  padding: 20px;
+}
+
+#Tableau table {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.9em;
+  border-collapse: collapse;
+}
+
+#Tableau caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#Tableau th, #Tableau td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: center;
+}
+
+#Tableau thead th {
+  background-color: #ffffff;
+  color: black;
+}
+
+#Tableau tfoot td {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* inscription css */
+#Inscription {
+  background-color: rgb(255, 240, 238);
+  color: black;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Inscription h2 {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+#Inscription form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#Inscription label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#Inscription input,
+#Inscription select {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#Inscription div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Inscription button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#Inscription button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+
+/* Articles css */
+#Articles {
+  background-color: rgb(255, 240, 238);
+  color: black;
+  height: auto;
+  padding: 40px 20px;
+}
+
+.articles-contenu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Articles h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+#Articles h3 {
+  font-size: 1em;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.articles-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.articles-flex article {
+  flex: 1 1 45%;
+  font-size: 0.8em;
+  padding-top: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.articles-flex article:nth-child(1) {
+  background-image: url("../images/shibuya.jpeg");
+}
+
+.articles-flex article:nth-child(2) {
+  background-image: url("../images/dontonbori.jpeg");
+}
+
+.articles-flex article:nth-child(3) {
+  background-image: url("../images/osakakyoto.jpeg");
+}
+
+.articles-flex article p {
+  background-color: rgba(255, 240, 238, 0.85);
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* galerie css */
+
+#Galerie {
+  min-height: 100vh;
+  height: auto;
+  background-color: cornsilk;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Galerie h2 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+/* conteneur des images */
+#galerie {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* vignettes */
+#galerie div {
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* transition */
+#galerie div:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* images */
+#photo1 { background-image: url("../images/amie.jpeg"); }
+#photo2 { background-image: url("../images/eau.jpeg"); }
+#photo3 { background-image: url("../images/food.jpeg"); }
+#photo4 { background-image: url("../images/mask.jpeg"); }
+#photo5 { background-image: url("../images/kimono.jpg"); }
+
+
+/* style footer */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  font-size: 0.75em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer div {
+  max-width: 200px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
